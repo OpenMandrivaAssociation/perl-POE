@@ -20,6 +20,7 @@ Buildrequires:	perl-devel
 Buildrequires:  perl(Term::ReadKey)
 Buildrequires:  perl-libwww-perl
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 POE is a framework for cooperative, event driven multitasking in Perl.
