@@ -1,7 +1,7 @@
 %define	module	POE
 %define	name	perl-%{module}
-%define	version	0.9999
-%define	release	%mkrel 2
+%define	version	1.0000
+%define	release	%mkrel 1
 
 Name:		%{name}
 Epoch:		2
