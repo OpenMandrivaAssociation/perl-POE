@@ -1,6 +1,6 @@
 %define	module	POE
 %define	name	perl-%{module}
-%define	version	1.0003
+%define	version	1.003
 %define	release	%mkrel 1
 
 Name:		%{name}
@@ -11,7 +11,7 @@ Summary:	Portable multitasking and networking framework for Perl
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/POE/%{module}-%{version}.tar.bz2
+Source:     http://www.cpan.org/modules/by-module/POE/%{module}-%{version}.tar.gz
 # This module naming scheme does not follow path names...
 Provides:	perl(POE::Resource::Controls)
 %if %{mdkversion} < 1010
