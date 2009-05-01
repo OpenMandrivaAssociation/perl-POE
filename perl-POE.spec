@@ -1,6 +1,6 @@
 %define	module	POE
 %define	name	perl-%{module}
-%define	version	1.003
+%define	version	1.005
 %define	release	%mkrel 1
 
 Name:		%{name}
