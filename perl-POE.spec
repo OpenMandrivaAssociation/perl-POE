@@ -1,26 +1,26 @@
-%define	module	POE
-%define	name	perl-%{module}
-%define	version	1.005
-%define	release	%mkrel 1
+%define	upstream_name	 POE
+%define	upstream_version 1.006
 
-Name:		%{name}
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
 Epoch:		2
-Version:	%{version}
-Release:	%{release}
+
 Summary:	Portable multitasking and networking framework for Perl
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/POE/%{module}-%{version}.tar.gz
-# This module naming scheme does not follow path names...
-Provides:	perl(POE::Resource::Controls)
+URL:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.gz
+# This upstream_name naming scheme does not follow path names...
+
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
 Buildrequires:  perl(Term::ReadKey)
 Buildrequires:  perl-libwww-perl
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
+Provides:	perl(POE::Resource::Controls)
 
 %description
 POE is a framework for cooperative, event driven multitasking in Perl.
@@ -36,7 +36,7 @@ systems such as internetworked financial markets, file systems, commerce and
 application servers.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 chmod 755 examples
 chmod 755 examples/*.perl
 
