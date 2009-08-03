@@ -1,5 +1,5 @@
 %define	upstream_name	 POE
-%define	upstream_version 1.006
+%define	upstream_version 1.007
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -60,6 +60,3 @@ DISPLAY= %{__make} test
 %{perl_vendorlib}/POE
 %{perl_vendorlib}/*.pm
 %{_mandir}/man3/*
-
-
-
