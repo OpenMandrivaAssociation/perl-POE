@@ -1,9 +1,9 @@
 %define	upstream_name	 POE
-%define	upstream_version 1.007
+%define	upstream_version 1.020
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 2
+Release:	%mkrel 1
 Epoch:		2
 
 Summary:	Portable multitasking and networking framework for Perl
