@@ -16,6 +16,11 @@ Source0:    http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstrea
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
+Buildrequires:  perl(Curses)
+Buildrequires:  perl(IO::Pty)
+Buildrequires:  perl(IO::Tty)
+Buildrequires:  perl(POE::Test::Loops)
+Buildrequires:  perl(Socket6)
 Buildrequires:  perl(Term::ReadKey)
 Buildrequires:  perl-libwww-perl
 BuildArch:	noarch
