@@ -1,5 +1,5 @@
 %define	upstream_name	 POE
-%define upstream_version 1.310
+%define upstream_version 1.311
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
