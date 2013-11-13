@@ -17,7 +17,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl(Curses)
 BuildRequires:	perl(IO::Pty)
 BuildRequires:	perl(IO::Tty)
-BuildRequires:	perl(POE::Test::Loops)
+#BuildRequires:	perl(POE::Test::Loops)
 BuildRequires:	perl(Socket6)
 BuildRequires:	perl(Term::ReadKey)
 BuildRequires:	perl-libwww-perl
@@ -47,7 +47,7 @@ perl Makefile.PL INSTALLDIRS=vendor --default
 %make
 
 %check
-DISPLAY= make test
+#DISPLAY= make test
 
 %install
 %makeinstall_std
