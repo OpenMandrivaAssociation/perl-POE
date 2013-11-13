@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	4
 Epoch:		2
 
 Summary:	Portable multitasking and networking framework for Perl
@@ -17,7 +17,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl(Curses)
 BuildRequires:	perl(IO::Pty)
 BuildRequires:	perl(IO::Tty)
-#BuildRequires:	perl(POE::Test::Loops)
+BuildRequires:	perl(POE::Test::Loops)
 BuildRequires:	perl(Socket6)
 BuildRequires:	perl(Term::ReadKey)
 BuildRequires:	perl-libwww-perl
@@ -47,7 +47,7 @@ perl Makefile.PL INSTALLDIRS=vendor --default
 %make
 
 %check
-#DISPLAY= make test
+DISPLAY= make test
 
 %install
 %makeinstall_std
