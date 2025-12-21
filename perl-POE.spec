@@ -13,6 +13,7 @@ URL:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.gz
 # This upstream_name naming scheme does not follow path names...
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Curses)
 BuildRequires:	perl(IO::Pty)
