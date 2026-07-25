@@ -1,16 +1,16 @@
 %define	upstream_name	 POE
-%define upstream_version 1.311
+%define upstream_version 1.370
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%{upstream_version}
+Release:	1
 Epoch:		2
 
 Summary:	Portable multitasking and networking framework for Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		https://github.com/rcaputo/poe
+Source0:	https://cpan.metacpan.org/authors/id/B/BI/BINGOS/POE-%{upstream_version}.tar.gz
 # This upstream_name naming scheme does not follow path names...
 
 BuildRequires:	make
