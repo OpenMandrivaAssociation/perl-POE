@@ -1,16 +1,14 @@
 %define	upstream_name	 POE
-%define upstream_version 1.370
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.370
+Release:	2
 Epoch:		2
 
 Summary:	Portable multitasking and networking framework for Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://github.com/rcaputo/poe
-Source0:	https://cpan.metacpan.org/authors/id/B/BI/BINGOS/POE-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BI/BINGOS/POE-%{version}.tar.gz
 # This upstream_name naming scheme does not follow path names...
 
 BuildRequires:	make
@@ -39,7 +37,7 @@ systems such as internetworked financial markets, file systems, commerce and
 application servers.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 chmod 755 examples
 chmod 755 examples/*.perl
 
@@ -146,8 +144,7 @@ DISPLAY= make test
 * Mon Jun 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 2:1.6.0-1mdv2010.0
 + Revision: 381789
 - update to 1.006
-- using %%perl_convert_version
-- fixed license field
+- using %1.370 fixed license field
 
 * Fri May 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 2:1.005-1mdv2010.0
 + Revision: 369670
